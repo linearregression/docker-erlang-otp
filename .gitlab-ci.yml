@@ -1,6 +1,10 @@
 services: docker
 
 env:
+  - VERSION=20 VARIANT=
+  - VERSION=20 VARIANT=slim
+  - VERSION=20 VARIANT=alpine
+  - VERSION=20 VARIANT= alpine
   - VERSION=19 VARIANT=
   - VERSION=19 VARIANT=slim
   - VERSION=18 VARIANT=
