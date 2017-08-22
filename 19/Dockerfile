@@ -24,6 +24,9 @@ RUN set -xe \
 	&& cd /usr/src/otp-src \
 	&& ./otp_build autoconf \
 	&& ./configure \
+		--enable-m64-build \
+		--with-ssl \
+		--with-dynamic-trace=dtrace \
 		--enable-dirty-schedulers \
 	&& make -j$(nproc) \
 	&& make install \

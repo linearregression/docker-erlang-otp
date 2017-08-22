@@ -25,6 +25,9 @@ RUN set -xe \
 	&& ( cd $ERL_TOP \
 	  && ./otp_build autoconf \
 	  && ./configure \
+		--enable-m64-build \
+		--with-ssl \
+		--enable-dirty-schedulers \
 	  && make -j$(nproc) \
 	  && make install ) \
 	&& find /usr/local -name examples | xargs rm -rf \
