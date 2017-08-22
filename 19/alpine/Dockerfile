@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-ENV OTP_VERSION="20.0.2"
+ENV OTP_VERSION="19.3.6.2"
 
 RUN set -xe \
 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" \
