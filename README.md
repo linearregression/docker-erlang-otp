@@ -6,7 +6,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/_/erlang.svg?style=flat-square)](https://hub.docker.com/_/erlang/)
 [![Image Layers](https://badge.imagelayers.io/erlang:latest.svg)](https://imagelayers.io/?images=erlang:latest 'Show Image Layers at imagelayers.io')
 
-[![Build Status](https://travis-ci.org/c0b/docker-erlang-otp.svg?branch=master)](https://travis-ci.org/c0b/docker-erlang-otp)
+[![Build Status](https://travis-ci.org/linearregression/docker-erlang-otp.svg?branch=master)](https://travis-ci.org/linearregression/docker-erlang-otp)
 
 This is used as docker base image for Erlang OTP.
 The goal is to provide images for a few last erlang releases (currently 20 / 19 / 18), in close to full feature Erlang OTP, and relatively slim images. Support to 17, R16 and R15 are provided in this repo on a best-effort basis, and not part of official-image effort in docker-library/official-images#1075 .
