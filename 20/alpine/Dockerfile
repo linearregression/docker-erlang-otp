@@ -19,6 +19,7 @@ RUN set -xe \
 		openssl-dev \
 		unixodbc-dev \
 		tar \
+		dtrace \
 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" \
 	&& mkdir -vp $ERL_TOP \
 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 \
@@ -28,6 +29,7 @@ RUN set -xe \
 	  && ./configure \
 		--enable-m64-build \
 		--with-ssl \
+		--with-dynamic-trace=dtrace \
 		--enable-dirty-schedulers \
 	  && make -j$(getconf _NPROCESSORS_ONLN) \
 	  && make install ) \
