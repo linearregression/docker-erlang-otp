@@ -26,6 +26,9 @@ RUN set -xe \
 	&& ( cd $ERL_TOP \
 	  && ./otp_build autoconf \
 	  && ./configure \
+		--enable-m64-build \
+		--with-ssl \
+		--enable-dirty-schedulers \
 	  && make -j$(getconf _NPROCESSORS_ONLN) \
 	  && make install ) \
 	&& rm -rf $ERL_TOP \
