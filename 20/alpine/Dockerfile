@@ -20,7 +20,6 @@ RUN set -xe \
 		openssl-dev \
 		unixodbc-dev \
 		tar \
-		lttng-tools@edge \
 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" \
 	&& mkdir -vp $ERL_TOP \
 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 \
