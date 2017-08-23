@@ -26,7 +26,6 @@ RUN set -xe \
 	&& ./configure \
 		--enable-m64-build \
 		--with-ssl \
-		--with-dynamic-trace=dtrace \
 		--enable-dirty-schedulers \
 	&& make -j$(nproc) \
 	&& make install \
